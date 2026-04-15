@@ -41,11 +41,14 @@ jobs:
         run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v6
+        with:
+          # Auto-enable Pages for repositories where it has not been enabled yet.
+          enablement: true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          # Upload dist folder
-          path: './dist'
+          # CRA outputs production files to build/.
+          path: './build'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
