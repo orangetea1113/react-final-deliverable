@@ -4,7 +4,12 @@ import TestComponent from "./components/TestComponent";
 import React from 'react';
 
 const Comp = () => {
-  return <p>This is a comp component</p>
+  return (
+    <>
+      <p>This is a comp component</p>
+      <p>Author: cathylv</p>
+    </>
+  )
 }
 
 function App() {
