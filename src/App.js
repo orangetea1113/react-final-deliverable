@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import TestComponent from "./components/TestComponent";
+import React from 'react';
 
 const Comp = () => {
   return <p>This is a comp component</p>
